@@ -1,0 +1,11 @@
+name = "user-save-do"
+main = "worker.js"
+compatibility_date = "2024-09-23"
+
+[[durable_objects.bindings]]
+name = "USER_DO"
+class_name = "UserSaveRoom"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["UserSaveRoom"]
