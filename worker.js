@@ -15,6 +15,8 @@ export class UserSaveRoom {
         const record = {
           user_id: body.user_id,
           user_name: body.user_name || 'ハンター',
+          max_stage: Number(body.max_stage) || 1,
+          max_floor: Number(body.max_floor) || 1,
           save_json: body.save_json,
           updated_at: new Date().toISOString()
         };
